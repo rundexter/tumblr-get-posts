@@ -1,0 +1,68 @@
+/*
+ * Metadata describing the module operation
+ */
+{
+    //Required. Inputs the module expects.
+    "inputs": [
+        {
+            "id": "base-hostname",
+            "title":"Hostname"
+        },
+        {
+            "id": "api_key",
+            "title":"API Key"
+        },
+        {
+            "id": "limit",
+            "title":"Limit"
+        },
+        {
+            "id": "type",
+            "title":"Type"
+        },
+        {
+            "id": "offset",
+            "title":"Offset"
+        }
+    ],
+    //Required. Outputs the module emits.
+    "outputs": [
+        {
+            "id": "blog_name",
+            "title":"Blog Name"
+        },
+        {
+            "id": "id",
+            "title":"Post ID"
+        },
+        {
+            "id": "post_url",
+            "title":"Post URL"
+        },
+        {
+            "id": "type",
+            "title":"Post Type"
+        },
+        {
+            "id": "timestamp",
+            "title":"Timestamp"
+        },
+        {
+            "id": "date",
+            "title":"Date"
+        },
+        {
+            "id": "reblog_key",
+            "title":"Reblog Key"
+        },
+        {
+            "id": "tags",
+            "title":"Tags"
+        }
+    ],
+    "providers": [{
+        "name": "tumblr"
+    }],
+    "icon": "tumblr",
+    "title": "Tumblr Get Posts" /* Required.A display name for the module */
+}
